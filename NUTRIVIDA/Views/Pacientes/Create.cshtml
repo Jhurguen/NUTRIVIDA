@@ -1,0 +1,31 @@
+﻿@model NutriVida.Models.Paciente
+
+@{
+    ViewData["Title"] = "Nuevo Paciente";
+}
+
+<h1>Registrar Paciente</h1>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label>Nombre</label>
+        <input asp-for="Nombre" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Edad</label>
+        <input asp-for="Edad" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Sexo</label>
+        <input asp-for="Sexo" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Teléfono</label>
+        <input asp-for="Telefono" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Guardar</button>
+</form>

@@ -1,0 +1,26 @@
+﻿@model NutriVida.Models.Plan
+
+@{
+    ViewData["Title"] = "Detalles del Plan";
+}
+
+<h1>Detalles</h1>
+
+<div>
+    <h4>Plan Nutricional</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Nombre</dt>
+        <dd class="col-sm-10">@Model.NombrePlan</dd>
+        <dt class="col-sm-2">Descripción</dt>
+        <dd class="col-sm-10">@Model.Descripcion</dd>
+        <dt class="col-sm-2">Fecha</dt>
+        <dd class="col-sm-10">@Model.FechaCreacion.ToShortDateString()</dd>
+        <dt class="col-sm-2">Paciente</dt>
+        <dd class="col-sm-10">@Model.Paciente?.Nombre</dd>
+    </dl>
+</div>
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Editar</a> |
+    <a asp-action="Index" class="btn btn-secondary">Volver</a>
+</p>

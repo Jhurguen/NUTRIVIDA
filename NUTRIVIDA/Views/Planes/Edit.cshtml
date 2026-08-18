@@ -1,0 +1,28 @@
+﻿@model NutriVida.Models.Plan
+
+@{
+    ViewData["Title"] = "Editar Plan";
+}
+
+<h1>Editar Plan</h1>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label>Nombre del Plan</label>
+        <input asp-for="NombrePlan" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Descripción</label>
+        <textarea asp-for="Descripcion" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label>Fecha de Creación</label>
+        <input asp-for="FechaCreacion" type="date" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Paciente</label>
+        <input asp-for="PacienteId" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Actualizar</button>
+</form>

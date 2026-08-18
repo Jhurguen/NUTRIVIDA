@@ -1,0 +1,19 @@
+﻿@model NutriVida.Models.Plan
+
+@{
+    ViewData["Title"] = "Eliminar Plan";
+}
+
+<h1>Eliminar</h1>
+
+<h3>¿Seguro que deseas eliminar este plan?</h3>
+<div>
+    <h4>@Model.NombrePlan</h4>
+    <p>Paciente: @Model.Paciente?.Nombre</p>
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Eliminar</button> |
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

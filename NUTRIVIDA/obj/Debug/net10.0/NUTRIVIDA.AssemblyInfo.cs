@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NUTRIVIDA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+becf9dc262ff2a08722aa70a8cd1c39a83d93784")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3fa373e70a8e26dc1ed20de8b12b8e22c18b17a")]
 [assembly: System.Reflection.AssemblyProductAttribute("NUTRIVIDA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NUTRIVIDA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

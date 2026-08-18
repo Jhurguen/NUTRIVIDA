@@ -1,0 +1,20 @@
+﻿@model NutriVida.Models.Historial
+
+@{
+    ViewData["Title"] = "Eliminar Consulta";
+}
+
+<h1>Eliminar</h1>
+
+<h3>¿Seguro que deseas eliminar esta consulta?</h3>
+<div>
+    <h4>Paciente: @Model.Paciente?.Nombre</h4>
+    <p>Fecha: @Model.FechaConsulta.ToShortDateString()</p>
+    <p>Observaciones: @Model.Observaciones</p>
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Eliminar</button> |
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
